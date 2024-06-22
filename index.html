@@ -74,33 +74,50 @@
             <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/aminoud" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
             <li class="nav-item"><a class="nav-link" href="https://globalwealthwise.wordpress.com/" title="WordPress"><i class="fab fa-wordpress"></i><span class="menu-title sr-only">WordPress</span></a></li>
                   <li class="nav-item">
-    <style>
-        .nav-link .dollar-sign {
+     <style>
+        /* Ensure the container takes full width and centers its content */
+        .container {
+            max-width: 1200px; /* Set a max-width for the container */
+            margin: 0 auto; /* Center the container */
+            padding: 0 20px; /* Add some padding for spacing */
+        }
+        
+        /* Flexbox layout for the nav items */
+        .nav {
+            display: flex;
+            justify-content: flex-start; /* Align items to the start */
+            align-items: center; /* Center items vertically */
+        }
+        
+        .nav-item {
+            margin-right: 20px; /* Add space between nav items */
+        }
+        
+        .dollar-sign {
             font-size: 33px; /* Adjust the size as needed */
         }
-        .container {
-            display: flex;
-            align-items: center;
-        }
-        .container .btn {
-            margin-left: 10px; /* Adjust the spacing as needed */
+        
+        .btn-container {
+            margin-top: 20px; /* Add space above the button */
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul class="nav justify-content-left">
-            <li class="nav-item">
-                <div class="container">
+    <div class="container">
+        <nav>
+            <ul class="nav justify-content-left">
+                <li class="nav-item">
                     <a class="nav-link" href="https://www.ravenholm.com" title="Ravenholm">
                         <span class="dollar-sign">$</span>
                         <span class="menu-title sr-only">Ravenholm</span>
                     </a>
-                    <a class="btn btn-primary shadow-sm hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="btn-container" data-aos="fade-up" data-aos-delay="200">
+            <a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a>
+        </div>
         </div>
       </div>
     </div>
